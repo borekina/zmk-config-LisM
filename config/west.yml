@@ -10,6 +10,10 @@ manifest:
       url-base: https://github.com/4mplelab
     - name: cormoran
       url-base: https://github.com/cormoran
+    - name: zzeneg # <-- required for Raw HID module
+      url-base: https://github.com/zzeneg
+    - name: srwi # <-- required for KeyPeek module
+      url-base: https://github.com/srwi
   projects:
     - name: zmk
       remote: cormoran
@@ -70,5 +74,11 @@ manifest:
     - name: zmk-feature-fast-keymap
       remote: cormoran
       revision: 8dac76de0ba38588ba39ca498910e24f8332bc6b
+    - name: zmk-raw-hid # <-- Raw HID module
+      remote: zzeneg
+      revision: main
+    - name: zmk-keypeek-layer-notifier # <-- KeyPeek module
+      remote: srwi
+      revision: master
   self:
     path: config
